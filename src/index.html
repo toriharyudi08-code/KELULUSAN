@@ -1,0 +1,21 @@
+<div class="container">
+    <h2>Pengumuman Kelulusan</h2>
+    <p class="subtitle">Masukkan Nama dan NISN untuk melihat hasil</p>
+    
+    <form id="cekForm" onsubmit="periksaKelulusan(event)">
+        <div class="form-group">
+            <label for="inputNama">Nama Lengkap</label>
+            <input type="text" id="inputNama" placeholder="Contoh: Budi Santoso" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="inputNisn">NISN</label>
+            <input type="text" id="inputNisn" placeholder="Contoh: 0123456789" required>
+        </div>
+        
+        <button type="submit">Cek Hasil</button>
+    </form>
+
+    <!-- Hasil pencarian akan muncul di dalam div ini -->
+    <div id="result"></div>
+</div>
